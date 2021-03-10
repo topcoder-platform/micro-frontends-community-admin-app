@@ -3,8 +3,9 @@ module.exports = {
   transform: {
     "^.+\\.(j|t)sx?$": "babel-jest",
   },
+  transformIgnorePatterns: ["node_modules/?!(react-avatar)"],
   moduleNameMapper: {
-    "\\.(css)$": "identity-obj-proxy",
+    "\\.(s?css)$": "identity-obj-proxy",
     "\\.svg$": "<rootDir>/__mocks__/fileMock.js",
   },
   setupFilesAfterEnv: [

@@ -4,7 +4,8 @@ const express = require("express");
 
 const app = express();
 
-app.use('/community-admin-app',
+app.use(
+  "/community-admin-app",
   express.static("./dist", {
     setHeaders: function setHeaders(res) {
       res.header("Access-Control-Allow-Origin", "*");
@@ -17,9 +18,9 @@ app.use('/community-admin-app',
   })
 );
 
-app.get('/', function (req, res) {
-  res.send('alive')
-})
+app.get("/", function (req, res) {
+  res.send("alive");
+});
 
 const PORT = process.env.PORT || 8505;
 app.listen(PORT);
