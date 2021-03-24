@@ -4,7 +4,7 @@ import PT from "prop-types";
 import Page from "components/Page";
 import PageHeader from "components/PageHeader";
 import { useSelector } from "react-redux";
-import withAuthentication from "../../hoc/withAuthentication";
+import withAuthentication from "hoc/withAuthentication";
 
 const Home = () => {
   const authUser = useSelector((state) => state.authUser);
@@ -16,11 +16,6 @@ const Home = () => {
       </div>
     </Page>
   );
-};
-
-Home.propTypes = {
-  teamId: PT.string,
-  jobId: PT.string,
 };
 
 export default withAuthentication(Home);

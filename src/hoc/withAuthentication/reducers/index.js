@@ -34,6 +34,7 @@ const teamMembersInitialState = _.pick(initialState, [
 ]);
 
 const reducer = (state = initialState, action) => {
+  console.log('action', action)
   switch (action.type) {
     case ACTION_TYPE.AUTH_USER_SUCCESS:
       return {

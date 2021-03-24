@@ -1,0 +1,173 @@
+[
+  {
+    "email": "albonteddy@gmail.com",
+    "handle": "TMALBONPH",
+    "category": "Veteran Developer",
+    "participated": 1,
+    "rating": 0.5,
+    "invited": 3,
+    "accepted": 1,
+    "denied": 1,
+    "no_response": 1,
+    "notes": [
+      "Newer note msg...",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    ]
+  },
+  {
+    "email": "ansaryfantastic@gmail.com",
+    "handle": "Ansary",
+    "category": "Veteran Developer",
+    "participated": 0,
+    "rating": 0.5,
+    "invited": 1,
+    "accepted": 1,
+    "denied": 0,
+    "no_response": 0,
+    "notes": []
+  },
+  {
+    "email": "joni.srm.arch@gmail.com",
+    "handle": "joni7sunny",
+    "category": "Veteran Design",
+    "participated": 0,
+    "rating": 0.5,
+    "invited": 1,
+    "accepted": 1,
+    "denied": 0,
+    "no_response": 0,
+    "notes": []
+  },
+  {
+    "email": "benioktopiansah@yahoo.com",
+    "handle": "kreasindo",
+    "category": "Veteran Design",
+    "participated": 0,
+    "rating": 0.5,
+    "invited": 1,
+    "accepted": 1,
+    "denied": 0,
+    "no_response": 0,
+    "notes": []
+  },
+  {
+    "email": "vanitawashington@gmail.com",
+    "handle": "VanitaW",
+    "category": "Veteran QA",
+    "participated": 0,
+    "rating": 0.5,
+    "invited": 1,
+    "accepted": 1,
+    "denied": 0,
+    "no_response": 0,
+    "notes": []
+  },
+  {
+    "email": "nuwan4us@gmail.com",
+    "handle": "codejam",
+    "category": "Veteran QA",
+    "participated": 0,
+    "rating": 3,
+    "invited": 1,
+    "accepted": 0,
+    "denied": 0,
+    "no_response": 0,
+    "notes": []
+  },
+  {
+    "email": "dkamenetsky@gmail.com",
+    "handle": "dimkadimon",
+    "category": "Veteran Marathon",
+    "participated": 0,
+    "rating": 2.5,
+    "invited": 1,
+    "accepted": 1,
+    "denied": 0,
+    "no_response": 0,
+    "notes": []
+  },
+  {
+    "email": "cagdasugurlu01@gmail.com",
+    "handle": "cagdas001",
+    "category": "Veteran Marathon",
+    "participated": 0,
+    "rating": 0.5,
+    "invited": 1,
+    "accepted": 1,
+    "denied": 0,
+    "no_response": 0,
+    "notes": []
+  },
+  {
+    "email": "karamaki@gmail.com",
+    "handle": "hotpepsi",
+    "category": "Veteran Competitive Programming",
+    "participated": 0,
+    "rating": 0.5,
+    "invited": 1,
+    "accepted": 1,
+    "denied": 0,
+    "no_response": 0,
+    "notes": []
+  },
+  {
+    "email": "pullasunil@gmail.com",
+    "handle": "pullasunil",
+    "category": "Veteran Competitive Programming",
+    "participated": 0,
+    "rating": 0.5,
+    "invited": 1,
+    "accepted": 1,
+    "denied": 0,
+    "no_response": 0,
+    "notes": []
+  },
+  {
+    "email": "robinsonchege95@gmail.com",
+    "handle": "Rokit12",
+    "category": "Rookie Developer",
+    "participated": 0,
+    "rating": 0.5,
+    "invited": 1,
+    "accepted": 1,
+    "denied": 0,
+    "no_response": 0,
+    "notes": []
+  },
+  {
+    "email": "hentrymartin.p@gmail.com",
+    "handle": "hentrymartin",
+    "category": "Rookie Developer",
+    "participated": 0,
+    "rating": 5,
+    "invited": 1,
+    "accepted": 1,
+    "denied": 0,
+    "no_response": 0,
+    "notes": []
+  },
+  {
+    "email": "photographyadam123@gmail.com",
+    "handle": "trivia79",
+    "category": "Rookie Design",
+    "participated": 0,
+    "rating": 5,
+    "invited": 1,
+    "accepted": 1,
+    "denied": 0,
+    "no_response": 0,
+    "notes": []
+  },
+  {
+    "email": "yoginogi@gmail.com",
+    "handle": "yoginogi",
+    "category": "Rookie Design",
+    "participated": 0,
+    "rating": 5,
+    "invited": 1,
+    "accepted": 1,
+    "denied": 0,
+    "no_response": 0,
+    "notes": []
+  }
+]

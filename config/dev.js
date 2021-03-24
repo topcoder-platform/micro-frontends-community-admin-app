@@ -13,4 +13,6 @@ module.exports = {
     V5: "https://api.topcoder-dev.com/v5",
     V3: "https://api.topcoder-dev.com/v3",
   },
+
+  COMMUNITY_ADMIN_URL: "https://tc-micro-community-admin.herokuapp.com",
 };

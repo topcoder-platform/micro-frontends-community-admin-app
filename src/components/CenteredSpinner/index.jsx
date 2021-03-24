@@ -8,12 +8,7 @@ import Loader from "react-loader-spinner";
 import "./styles.module.scss";
 
 function CenteredSpinner(props) {
-  const {
-    type = "TailSpin",
-    color = "#00BFFF",
-    height = 80,
-    width = 80,
-  } = props;
+  const { type = "Hearts", color = "#EF3A3A", height = 80, width = 80 } = props;
 
   return (
     <div styleName="loader-container">

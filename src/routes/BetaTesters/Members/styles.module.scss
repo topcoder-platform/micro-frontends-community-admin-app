@@ -1,0 +1,74 @@
+.container {
+  background-color: white;
+  padding: 15px;
+  border-radius: 4px;
+  .search-bar {
+    max-width: 400px;
+    margin-bottom: 22px;
+  }
+  .filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > div {
+      flex: 1;
+      max-width: 400px;
+    }
+
+    .actionButtons {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        margin-right: 5px;
+      }
+    }
+  }
+  .members-table {
+    margin: 32px 0;
+    width: 100%;
+
+    thead tr {
+      border-bottom: 1px solid #aaaaab;
+      th {
+        font-weight: bold;
+        text-align: left;
+        padding: 5px 0;
+      }
+    }
+
+    .members-table-row {
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f4f5f6;
+      }
+
+      td {
+        padding: 10px 0;
+
+        input[type=checkbox] {
+          visibility: visible;
+          cursor: pointer;
+        }
+      }
+
+      .memberHandle {
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 16px;
+      }
+    }
+
+    .nothing-text {
+      padding: 20px 0;
+    }
+  }
+  .pagination-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+}

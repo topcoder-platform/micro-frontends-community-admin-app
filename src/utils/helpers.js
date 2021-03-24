@@ -4,7 +4,7 @@
  * This file should contain helper methods which cannot be grouped into a separate file like we did for "format.js".
  * If there are multiple methods which could be grouped into a separate file by their meaning they should be extracted from here to not make this file too big.
  */
-import _ from "lodash";
+import { find } from "lodash";
 
 /**
  * Delay code for some milliseconds using promise.
@@ -27,7 +27,7 @@ export const delay = (duration) =>
  * @returns {{ label: string, value: any }} select option
  */
 export const getSelectOptionByValue = (value, selectOptions) => {
-  const option = _.find(selectOptions, { value });
+  const option = find(selectOptions, { value });
 
   if (!option) {
     return {
@@ -38,3 +38,14 @@ export const getSelectOptionByValue = (value, selectOptions) => {
 
   return option;
 };
+
+/**
+ * Test if a string is valid email
+ * @param {String} email The string to test
+ */
+export function isValidEmail(email) {
+  const pattern = new RegExp(
+    /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i
+  );
+  return pattern.test(email);
+}

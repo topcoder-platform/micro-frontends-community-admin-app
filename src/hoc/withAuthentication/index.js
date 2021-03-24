@@ -49,6 +49,7 @@ export default function withAuthentication(Component) {
           .then(({ tokenV3 }) => {
             if (!!tokenV3) {
               const tokenData = decodeToken(tokenV3);
+              console.log('tokenData', tokenData)
               dispatch(
                 authUserSuccess(
                   _.pick(tokenData, ["userId", "handle", "roles"])

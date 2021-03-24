@@ -294,10 +294,15 @@ export const STATUS_OPTIONS = [
 export const DISABLED_DESCRIPTION_MESSAGE =
   "You may not edit a Job Description that is currently posted to Topcoder.com. Please contact support@topcoder.com.";
 
+// Side Navi Menu
 export const appMenu = [
   {
-    title: "ADMIN",
+    title: "HOME",
     path: "/community-admin",
+    icon:
+      "https://platform.topcoder.com/navbar/images/9df8566972f4b6d8b94b0367a6e27929.svg",
+    activeIcon:
+      "https://platform.topcoder.com/navbar/images/9df8566972f4b6d8b94b0367a6e27929.svg",
   },
   {
     title: "BETA TESTERS",
@@ -316,4 +321,26 @@ export const appMenu = [
       },
     ],
   },
+];
+
+// Member Category Filter
+export const membersFilter = [
+  { label: "Filter by group...", value: "" },
+  { label: "Veteran Developer", value: "Veteran Developer" },
+  { label: "Veteran Design", value: "Veteran Design" },
+  { label: "Veteran QA", value: "Veteran QA" },
+  { label: "Veteran Marathon", value: "Veteran Marathon" },
+  {
+    label: "Veteran Competitive Programming",
+    value: "Veteran Competitive Programming",
+  },
+  { label: "Rookie Developer", value: "Rookie Developer" },
+  { label: "Rookie Design", value: "Rookie Design" },
+  { label: "Rookie QA", value: "Rookie QA" },
+  { label: "Rookie Marathon", value: "Rookie Marathon" },
+  {
+    label: "Rookie Competitive Programming",
+    value: "Rookie Competitive Programming",
+  },
+  { label: "New", value: "New" },
 ];

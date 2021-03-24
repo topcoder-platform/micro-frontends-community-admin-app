@@ -5,6 +5,7 @@ import ReduxToastr from "react-redux-toastr";
 import { setAppMenu } from "@topcoder/micro-frontends-navbar-app";
 import { appMenu } from "./constants";
 import Home from "./routes/Home";
+import BetaTesterMembers from "./routes/BetaTesters/Members";
 import store from "./store";
 import "./styles/main.vendor.scss";
 import styles from "./styles/main.module.scss";
@@ -20,12 +21,13 @@ export default function Root() {
       <Provider store={store}>
         <Router>
           <Home path="/community-admin" />
+          <BetaTesterMembers path="/community-admin/beta-testters/members" />
         </Router>
 
         {/* Global config for Toastr popups */}
         <ReduxToastr
           timeOut={4000}
-          position="bottom-left"
+          position="top-right"
           transitionIn="fadeIn"
           transitionOut="fadeOut"
         />
