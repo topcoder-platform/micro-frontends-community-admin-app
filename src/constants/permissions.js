@@ -59,6 +59,7 @@ export const TOPCODER_ROLE = {
   TOPCODER_USER: "Topcoder User",
   CONNECT_ADMIN: "Connect Admin",
   COPILOT_MANAGER: "Connect Copilot Manager",
+  COMMUNITY_ADMIN: "Community Admin",
 };
 
 /**
@@ -143,5 +144,14 @@ export const PERMISSIONS = {
       TOPCODER_ROLE.CONNECT_MANAGER,
       TOPCODER_ROLE.COPILOT_MANAGER,
     ],
+  },
+
+  // Community Admins
+  ACCESS_COMMUNITY_ADMIN_APP: {
+    meta: {
+      group: "Community",
+      title: "Access the community admin app",
+    },
+    topcoderRoles: [TOPCODER_ROLE.COMMUNITY_ADMIN],
   },
 };

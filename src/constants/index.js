@@ -305,22 +305,32 @@ export const appMenu = [
       "https://platform.topcoder.com/navbar/images/9df8566972f4b6d8b94b0367a6e27929.svg",
   },
   {
-    title: "BETA TESTERS",
+    title: "MEMBER VISIBILITY",
     children: [
       {
-        title: "Members",
-        path: "/community-admin/beta-testters/members",
-      },
-      {
-        title: "Tests",
-        path: "/community-admin/beta-testters/tests",
-      },
-      {
-        title: "Applications",
-        path: "/community-admin/beta-testters/applications",
+        title: "All",
+        path: "/community-admin/member-visibility/all",
       },
     ],
   },
+  // Will need at some later release...
+  // {
+  //   title: "BETA TESTERS",
+  //   children: [
+  //     {
+  //       title: "Members",
+  //       path: "/community-admin/beta-testters/members",
+  //     },
+  //     {
+  //       title: "Tests",
+  //       path: "/community-admin/beta-testters/tests",
+  //     },
+  //     {
+  //       title: "Applications",
+  //       path: "/community-admin/beta-testters/applications",
+  //     },
+  //   ],
+  // },
 ];
 
 // Member Category Filter

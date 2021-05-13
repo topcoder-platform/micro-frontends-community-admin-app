@@ -87,8 +87,8 @@ const AsyncSelect = (props) => {
         defaultOptions={props.defaultOptions}
       />
     </div>
-  )
-}
+  );
+};
 
 AsyncSelect.propTypes = {
   value: PT.string,
@@ -100,12 +100,11 @@ AsyncSelect.propTypes = {
   onFocus: PT.func,
   onInputChange: PT.func,
   cacheOptions: PT.bool,
-  onInputChange: PT.func,
   noOptionsText: PT.string,
   loadingText: PT.string,
   loadOptions: PT.func,
   defaultOptions: PT.bool || PT.array,
   disabled: PT.bool,
-}
+};
 
 export default AsyncSelect;

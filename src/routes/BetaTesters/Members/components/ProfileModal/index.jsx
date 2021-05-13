@@ -5,8 +5,6 @@
 import React from "react";
 import BaseModal from "components/BaseModal";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import Button from "components/Button";
-import TesterForm from "../TesterForm";
 import "./styles.module.scss";
 
 const ProfileModal = ({ profileModal, onClose }) => {
@@ -24,7 +22,6 @@ const ProfileModal = ({ profileModal, onClose }) => {
               <Tab>Information</Tab>
               <Tab>Notes</Tab>
               <Tab>History</Tab>
-              <Tab>Update</Tab>
             </TabList>
 
             <TabPanel>
@@ -43,29 +40,13 @@ const ProfileModal = ({ profileModal, onClose }) => {
             </TabPanel>
             <TabPanel>
               {profileModal.notes.map((note) => (
-                <p styleName="memberNote">{note}</p>
+                <div styleName="memberNote">
+                  <span>{note.created_on}</span>
+                  <p>{note.text}</p>
+                </div>
               ))}
             </TabPanel>
             <TabPanel></TabPanel>
-            <TabPanel>
-              <div styleName="testerUpdate">
-                <TesterForm
-                  initTester={profileModal}
-                  onChange={(t) => console.log("TesterForm", t)}
-                />
-                <Button
-                  type="primary"
-                  // disabled={
-                  //   !profileModal.handle ||
-                  //   !profileModal.category ||
-                  //   !isValidEmail(profileModal.email)
-                  // }
-                  // onClick={() => onSave(tester)}
-                >
-                  Save
-                </Button>
-              </div>
-            </TabPanel>
           </Tabs>
         </div>
       ) : null}

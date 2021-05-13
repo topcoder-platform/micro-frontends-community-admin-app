@@ -1,5 +1,5 @@
-/** Home page */
-import React, { useState, useCallback } from "react";
+/** Beta testers members page */
+import React, { useState } from "react";
 import Page from "components/Page";
 import PageHeader from "components/PageHeader";
 import withAuthentication from "hoc/withAuthentication";
@@ -15,6 +15,9 @@ import Rating from "components/Rating";
 import { toastr } from "react-redux-toastr";
 import ProfileModal from "./components/ProfileModal";
 import TesterModal from "./components/TesterModal";
+import { hasPermission } from "utils/permissions";
+import { PERMISSIONS } from "constants/permissions";
+import NoAccessPage from "components/NoAccessPage";
 import "./styles.module.scss";
 
 const PER_PAGE = 10;
@@ -63,7 +66,7 @@ const BetaTesterMembers = () => {
     searchTerm
   );
 
-  return (
+  return hasPermission(PERMISSIONS.ACCESS_COMMUNITY_ADMIN_APP) ? (
     <Page title="Members | Beta Testers">
       <PageHeader title="Members" />
       {!members ? (
@@ -187,8 +190,9 @@ const BetaTesterMembers = () => {
         </div>
       )}
     </Page>
+  ) : (
+    <NoAccessPage />
   );
 };
 
-export default BetaTesterMembers;
-// export default withAuthentication(BetaTesterMembers);
+export default withAuthentication(BetaTesterMembers);

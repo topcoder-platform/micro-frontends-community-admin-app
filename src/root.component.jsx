@@ -5,6 +5,7 @@ import ReduxToastr from "react-redux-toastr";
 import { setAppMenu } from "@topcoder/micro-frontends-navbar-app";
 import { appMenu } from "./constants";
 import Home from "./routes/Home";
+import MemberVisibility from "./routes/MemberVisibility/All";
 import BetaTesterMembers from "./routes/BetaTesters/Members";
 import store from "./store";
 import "./styles/main.vendor.scss";
@@ -21,7 +22,8 @@ export default function Root() {
       <Provider store={store}>
         <Router>
           <Home path="/community-admin" />
-          <BetaTesterMembers path="/community-admin/beta-testters/members" />
+          <MemberVisibility path="/community-admin/member-visibility/all" />
+          {/* <BetaTesterMembers path="/community-admin/beta-testters/members" /> Will need for some next release... */}
         </Router>
 
         {/* Global config for Toastr popups */}
