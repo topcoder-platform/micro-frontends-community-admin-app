@@ -12,7 +12,7 @@ const NoAccessPage = () => {
     <Page title="Forbidden">
       <PageHeader title="Forbidden Area" />
       <h4 styleName="msg">
-        Sorry, looks that you not autorized to access this page :(
+        Sorry, looks that you not authorized to access this page :(
       </h4>
       <p>
         If you feel this is an error, contact{" "}

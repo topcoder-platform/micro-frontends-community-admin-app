@@ -3,9 +3,8 @@
  */
 
 import express from "express";
-import { getMembers } from "../services/betaTesters";
-
-const cors = require("cors");
+import { getMembers } from "../services/betaTesters.js";
+import cors from "cors";
 
 const routes = express.Router();
 

@@ -2,8 +2,10 @@
 /**
  * Community Admin backend server
  */
-const express = require("express");
-// const betaTesters = require("./src/api/routes/betaTesters");
+import express from "express";
+import bodyParser from "body-parser";
+// import betaTesters from "./src/api/routes/betaTesters.js";
+import recruitHooks from "./src/api/routes/recruitHooks.js";
 
 const app = express();
 
@@ -23,10 +25,11 @@ app.use(
 );
 
 // plugins
-// app.use(bodyParser.json());
+app.use(bodyParser.json());
 
 // API routes
-// app.use("/api/testers", betaTesters);
+// app.use("/api/testers", betaTesters); TODO for v2
+app.use("/api/hooks/", recruitHooks);
 
 // ping route
 app.get("/", function (req, res) {
