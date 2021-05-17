@@ -1,7 +1,7 @@
 {
   "name": "@topcoder/micro-frontends-community-admin-app",
   "scripts": {
-    "start": "node --experimental-json-modules server.js",
+    "start": "node server.js",
     "dev": "webpack-dev-server --port 8505 --host 0.0.0.0",
     "dev-https": "webpack-dev-server --https --port 8505 --host 0.0.0.0",
     "build": "webpack --mode=${APPMODE:-production} --env.config=${APPENV:-prod}",
@@ -95,6 +95,5 @@
     "last 1 version",
     "> 1%",
     "IE 11"
-  ],
-  "type": "module"
+  ]
 }

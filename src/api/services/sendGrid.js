@@ -2,7 +2,7 @@
  * Server-side functions necessary for sending emails via Sendgrid APIs
  */
 /* global process */
-import fetch from "isomorphic-fetch";
+const fetch = require("isomorphic-fetch");
 
 /**
  * Sends emails via the Sendgrid API
@@ -10,7 +10,7 @@ import fetch from "isomorphic-fetch";
  * @param {Object} req the request
  * @param {Object} res the response
  */
-export const sendEmail = async (req, res) => {
+const sendEmail = async (req, res) => {
   try {
     const msg = req.body;
     const response = await fetch("https://api.sendgrid.com/v3/mail/send", {
@@ -43,7 +43,7 @@ export const sendEmail = async (req, res) => {
  * @param {Object} msg the payload
  * @returns Promise
  */
-export const sendEmailDirect = async (msg) => {
+const sendEmailDirect = async (msg) => {
   try {
     const response = await fetch("https://api.sendgrid.com/v3/mail/send", {
       method: "POST",
@@ -69,4 +69,7 @@ export const sendEmailDirect = async (msg) => {
   }
 };
 
-export default undefined;
+module.exports = {
+  sendEmail,
+  sendEmailDirect,
+};

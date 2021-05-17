@@ -2,10 +2,10 @@
 /**
  * Community Admin backend server
  */
-import express from "express";
-import bodyParser from "body-parser";
+const express = require("express");
+const bodyParser = require("body-parser");
 // import betaTesters from "./src/api/routes/betaTesters.js";
-import recruitHooks from "./src/api/routes/recruitHooks.js";
+const recruitHooks = require("./src/api/routes/recruitHooks.js");
 
 const app = express();
 

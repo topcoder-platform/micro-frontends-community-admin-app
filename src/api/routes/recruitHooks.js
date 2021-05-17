@@ -2,9 +2,9 @@
  * The routes related to beta testers integration
  */
 
-import express from "express";
-import cors from "cors";
-import { sendEmailDirect } from "../services/sendGrid.js";
+const express = require("express");
+const cors = require("cors");
+const sendGrid = require("../services/sendGrid.js");
 
 const routes = express.Router();
 
@@ -14,25 +14,27 @@ routes.use(cors());
 routes.options("*", cors());
 
 routes.post("/recruit", (req, res) => {
-  sendEmailDirect({
-    personalizations: [
-      {
-        to: [{ email: "kiril.kartunov@gmail.com" }],
-        subject: "Recruit hook payload",
+  sendGrid
+    .sendEmailDirect({
+      personalizations: [
+        {
+          to: [{ email: "kiril.kartunov@gmail.com" }],
+          subject: "Recruit hook payload",
+        },
+      ],
+      from: {
+        email: "noreply@topcoder.com",
       },
-    ],
-    from: {
-      email: "noreply@topcoder.com",
-    },
-    content: [
-      {
-        type: "text/plain",
-        value: JSON.stringify(req.body),
-      },
-    ],
-  }).then((result) => {
-    res.send({});
-  });
+      content: [
+        {
+          type: "text/plain",
+          value: JSON.stringify(req.body),
+        },
+      ],
+    })
+    .then((result) => {
+      res.send({});
+    });
 });
 
-export default routes;
+module.exports = routes;
