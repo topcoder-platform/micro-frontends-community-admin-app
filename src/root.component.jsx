@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Provider } from "react-redux";
 import { Router } from "@reach/router";
 import ReduxToastr from "react-redux-toastr";
-import { setAppMenu } from "@topcoder/micro-frontends-navbar-app";
+import { setAppMenu } from "@topcoder/mfe-header";
 import { appMenu } from "./constants";
 import Home from "./routes/Home";
 import MemberVisibility from "./routes/MemberVisibility/All";
