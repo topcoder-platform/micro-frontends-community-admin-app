@@ -1,0 +1,42 @@
+.profileModal {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  .memberNote {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #aaaaab;
+  }
+
+  :global {
+    .react-tabs__tab-list {
+      display: flex;
+      margin-bottom: 20px;
+
+      .react-tabs__tab {
+        margin-right: 20px;
+        cursor: pointer;
+
+        &--selected {
+          font-weight: bold;
+          border-bottom: 3px solid #aaaaab;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .testerUpdate {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      align-self: flex-end;
+    }
+  }
+}

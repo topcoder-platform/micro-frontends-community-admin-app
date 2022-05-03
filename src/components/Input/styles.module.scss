@@ -1,0 +1,18 @@
+@import "styles/include";
+
+.input {
+  background-color: #ffffff;
+  border: 1px solid #aaaaaa;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #2a2a2a;
+  font-size: 14px;
+  height: 40px;
+  line-height: 38px;
+  outline: none;
+  padding: 0 15px;
+
+  &::placeholder {
+    color: #aaaaaa;
+  }
+}

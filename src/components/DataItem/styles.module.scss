@@ -1,0 +1,38 @@
+@import "styles/include";
+
+.data-item {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  svg {
+    margin-top: 4px;
+  }
+}
+
+.data {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 90%;
+}
+
+.title {
+  color: #555555;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.value {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  margin-top: 2px;
+  text-align: left;
+  word-break: break-all;
+}
+
+.value-component {
+  margin-top: 2px;
+}

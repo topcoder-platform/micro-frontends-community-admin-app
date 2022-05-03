@@ -1,0 +1,23 @@
+@import "styles/include";
+
+.percentage {
+  align-items: center;
+  display: flex;
+  color: #0ab88a;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.percentage-bar {
+  flex: 0 0 40px;
+  margin-right: 8px;
+  width: 40px;
+}
+
+.more {
+  color: #0d61bf;
+  cursor: pointer;
+  white-space: nowrap;
+}
